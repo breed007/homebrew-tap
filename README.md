@@ -3,11 +3,14 @@
 Homebrew casks for my macOS menu-bar apps.
 
 ```sh
-brew install --cask breed007/tap/switchback
-brew install --cask breed007/tap/crossbar
+brew tap breed007/tap
+brew trust breed007/tap          # one-time — Homebrew requires trusting third-party taps
+brew install --cask switchback
+brew install --cask crossbar
 ```
 
-(`brew tap breed007/tap` once, then `brew install --cask switchback` also works.)
+(Once tapped and trusted, `brew install --cask breed007/tap/switchback` also works
+without the separate tap step.)
 
 ## Casks
 
