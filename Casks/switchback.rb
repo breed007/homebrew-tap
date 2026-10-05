@@ -1,6 +1,6 @@
 cask "switchback" do
-  version "0.1.1"
-  sha256 "515e36c7a2cd475d9014868d52da56898d2b3a12916be54bd4dd8dbd7db703bc"
+  version "0.5.0"
+  sha256 "8e73d086fb09608e7b397760f98e6d615918c643ab134079587a7edf2ab19992"
 
   url "https://github.com/breed007/switchback-macos/releases/download/v#{version}/Switchback-v#{version}-universal.zip"
   name "Switchback"
@@ -15,6 +15,10 @@ cask "switchback" do
   depends_on macos: :sonoma
 
   app "Switchback.app"
+
+  # v0.5 adds a privileged helper (an SMAppService LaunchDaemon). Stop it on uninstall.
+  uninstall launchctl: "com.breed007.switchback.helper",
+            quit:      "com.breed007.switchback"
 
   zap trash: "~/Library/Preferences/com.breed007.switchback.plist"
 end
