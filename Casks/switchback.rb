@@ -1,6 +1,6 @@
 cask "switchback" do
-  version "0.6.0"
-  sha256 "3b51ec3fb7b5a79ea550fc1d04ef26b6c9c1063f9e5e20c4d9a38d227352772c"
+  version "0.7.0"
+  sha256 "fb1cb8f72732fb06e21d03a10a2a86723d1119c17cdc00366b95a2434ff63b77"
 
   url "https://github.com/breed007/switchback-macos/releases/download/v#{version}/Switchback-v#{version}-universal.zip"
   name "Switchback"
