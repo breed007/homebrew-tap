@@ -1,6 +1,6 @@
 cask "crossbar" do
-  version "0.6.0"
-  sha256 "e504d4598080c196b53bb510509364b82ea1aba1fb1eaa083f1ccf4357f571b1"
+  version "0.6.1"
+  sha256 "549818078be56316ec0300abeffedd23e45460e5abbeb4a8d6fc9a0455ecb57a"
 
   url "https://github.com/breed007/crossbar-macos/releases/download/v#{version}/crossbar-v#{version}-universal.zip"
   name "Crossbar"
